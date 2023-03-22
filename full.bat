@@ -15,6 +15,7 @@ call %projectpath%\utils\wait-network-ready.bat
 
 rem chocolatey
 call %projectpath%\utils\scoop-install.bat
+call %projectpath%\utils\scoop-add-extra-bucket.bat
 
 rem =======================================================
 rem Custom begin
