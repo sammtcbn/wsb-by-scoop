@@ -23,7 +23,7 @@ rem =======================================================
 call %projectpath%\utils\scoop-pkg-ins.bat 7zip
 call %projectpath%\utils\scoop-pkg-ins.bat notepadplusplus
 call %projectpath%\utils\scoop-pkg-ins.bat git
-
+call %projectpath%\utils\scoop-pkg-ins.bat go
 call %projectpath%\utils\scoop-pkg-ins.bat python
 
 rem ----- extra-bucket -----
