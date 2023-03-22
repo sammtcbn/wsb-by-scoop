@@ -27,11 +27,14 @@ call %projectpath%\utils\scoop-pkg-ins.bat go
 call %projectpath%\utils\scoop-pkg-ins.bat python
 call %projectpath%\utils\scoop-pkg-ins.bat rust
 
-rem ----- extra-bucket -----
-rem git is a need for extra bucket install
-call %projectpath%\utils\scoop-add-extra-bucket.bat
-
+rem ----- bucket extras -----
+rem git is a need for bucket install
+call %projectpath%\utils\scoop-bucket-add.bat extras
 call %projectpath%\utils\scoop-pkg-ins.bat googlechrome
+
+rem ----- bucket games -----
+call %projectpath%\utils\scoop-bucket-add.bat games
+call %projectpath%\utils\scoop-pkg-ins.bat bombermaaan
 
 rem =======================================================
 rem Custom end
