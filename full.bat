@@ -25,6 +25,7 @@ call %projectpath%\utils\scoop-pkg-ins.bat notepadplusplus
 call %projectpath%\utils\scoop-pkg-ins.bat git
 call %projectpath%\utils\scoop-pkg-ins.bat go
 call %projectpath%\utils\scoop-pkg-ins.bat python
+call %projectpath%\utils\scoop-pkg-ins.bat rust
 
 rem ----- extra-bucket -----
 rem git is a need for extra bucket install
