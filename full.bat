@@ -25,6 +25,8 @@ call %projectpath%\utils\scoop-pkg-ins.bat notepadplusplus
 call %projectpath%\utils\scoop-pkg-ins.bat googlechrome
 call %projectpath%\utils\scoop-pkg-ins.bat git
 
+call %projectpath%\utils\scoop-pkg-ins.bat python
+
 rem =======================================================
 rem Custom end
 rem =======================================================
