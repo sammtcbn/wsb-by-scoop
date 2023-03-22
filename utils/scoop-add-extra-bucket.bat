@@ -1,7 +1,5 @@
 @echo off
 
-if "%~1"=="" goto END
-
 where /q scoop
 if /I %ERRORLEVEL% NEQ 0 (
 
@@ -14,5 +12,3 @@ if /I %ERRORLEVEL% NEQ 0 (
 ) else (
     scoop bucket add extras
 )
-
-:END

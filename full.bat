@@ -15,7 +15,6 @@ call %projectpath%\utils\wait-network-ready.bat
 
 rem chocolatey
 call %projectpath%\utils\scoop-install.bat
-call %projectpath%\utils\scoop-add-extra-bucket.bat
 
 rem =======================================================
 rem Custom begin
@@ -23,10 +22,15 @@ rem =======================================================
 
 call %projectpath%\utils\scoop-pkg-ins.bat 7zip
 call %projectpath%\utils\scoop-pkg-ins.bat notepadplusplus
-call %projectpath%\utils\scoop-pkg-ins.bat googlechrome
 call %projectpath%\utils\scoop-pkg-ins.bat git
 
 call %projectpath%\utils\scoop-pkg-ins.bat python
+
+rem ----- extra-bucket -----
+rem git is a need for extra bucket install
+call %projectpath%\utils\scoop-add-extra-bucket.bat
+
+call %projectpath%\utils\scoop-pkg-ins.bat googlechrome
 
 rem =======================================================
 rem Custom end
